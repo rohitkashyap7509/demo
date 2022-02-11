@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: auto;
+  font-family: "Proxima Nova", "Inter";
+}
+.container {
+  /* background-image: url("paper.gif"); */
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+.bg {
+  width: 100%;
+  height: 90vh;
+  /* border-radius: 0 0 100% 100%; */
+  background-color: #e13331;
+
+  border-radius: 50% / 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.sub-container {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0px;
+
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.logo > img {
+  width: 12vh;
+  height: 10vh;
+  width: 238px;
+  height: 207px;
+}
+
+.button {
+  background-color: red;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 15vh;
+}
+.heading-container > h1 {
+  width: 500px;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  color: #ffffff;
+}
+/* section */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 1vh; */
+}
+.tablet {
+  width: 80vh;
+  height: 50vh;
+}
+
+/* form */
+.form-container {
+  background-color: #ffffff;
+
+  z-index: 1;
+
+  box-shadow: inset 0px 3px 6px #00000029, 10px 10px 10px #00000029;
+  opacity: 0.84;
+  /* padding: 20px; */
+}
+.form {
+  width: 475px;
+  height: 40vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+.form > input {
+  width: 90%;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #707070;
+  color: #888282;
+  font-weight: 400;
+  font-size: 16px;
+}
+.submit-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+.submit-btn {
+  border: none;
+  background: #e13431;
+  padding: 10px 20px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* section 3 */
+.section2 {
+  margin-top: 60px;
+}
+.section2-title-container {
+  display: grid;
+  place-items: center;
+}
+.section2-title {
+  text-align: center;
+  font-size: 3.2rem;
+  width: 700px;
+}
+.section2-title-black {
+  font-size: 3.2rem;
+  display: inline;
+}
+.section2-cards {
+  overflow-x: scroll;
+  margin-top: 3rem;
+}
+.section2-card {
+  background-color: #f6f6f6;
+  box-shadow: 0px 5px 5px #00000029;
+  border: 1px solid #707070;
+  border-radius: 53px;
+  padding: 20px 20px 30px 20px;
+  align-content: space-between;
+  gap: 15px 0px;
+  margin-right: 50px;
+}
+.section2-card > img {
+  width: 250px;
+  height: 200px;
+}
+.section2-card > h4 {
+  color: #e13431;
+}
+.section2-card > p {
+  text-align: center;
+  color: #101010;
+  font-weight: 300;
+}
+
+/* section 3 */
+.section3 {
+  margin-top: 60px;
+}
+.section3-title-container {
+  display: grid;
+  place-items: center;
+}
+.section5 {
+  background-color: #f6f6f6;
+  /* height: 200px; */
+}
+.reviews {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.review1 {
+  border: 2px solid black;
+}
+.space {
+  margin-top: 50px;
+}
+
+.footer {
+  background-color: #e13431;
+  height: 100px;
+  color: #ffffff;
+  font-size: 35px;
+  display: grid;
+  place-items: center;
+}
+/* media queries */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .bg {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    background-color: #e13331;
+  }
+  .logo {
+    display: grid;
+    place-items: center;
+  }
+  .heading-container {
+    bottom: 0;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .heading-container > h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .tablet-container {
+    margin-bottom: 60px;
+  }
+  .tablet {
+    width: 100%;
+  }
+  .section {
+    flex-direction: column;
+    margin-top: 4vh;
+  }
+  .form,
+  .form-container {
+    width: 100%;
+    height: 100%;
+  }
+  .submit-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .section2-title {
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #ffffff !important;
+  }
+  .section2-title-black {
+    font-size: 1.3rem;
+  }
+  .section2-card > img {
+    height: 161px;
+  }
+}

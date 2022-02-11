@@ -1,0 +1,175 @@
+.d-flex {
+  display: flex;
+}
+.c-flex {
+  display: flex;
+  flex-direction: column;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+.row-gap-10 {
+  row-gap: 10px;
+}
+.row-gap-20 {
+  row-gap: 20px;
+}
+/* colors */
+.red-text {
+  color: #e13431;
+}
+.black-text {
+  color: black;
+}
+.primary-btn {
+  background-color: #e13431;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+}
+
+/*  */
+/* Hollow Button with orange border */
+.fs-10 {
+  font-size: 10px !important;
+}
+.fs-11 {
+  font-size: 11px !important;
+}
+.fs-12 {
+  font-size: 12px !important;
+}
+.fs-13 {
+  font-size: 13px !important;
+}
+.fs-14 {
+  font-size: 14px !important;
+}
+.fs-15 {
+  font-size: 15px !important;
+}
+.fs-16 {
+  font-size: 16px !important;
+}
+.fs-17 {
+  font-size: 17px !important;
+}
+.fs-18 {
+  font-size: 18px !important;
+}
+/* Font weight */
+.fw-1000 {
+  font-weight: 1000;
+}
+.fw-900 {
+  font-weight: 900 !important;
+}
+.fw-800 {
+  font-weight: 800 !important;
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-300 {
+  font-weight: 300 !important;
+}
+.fw-200 {
+  font-weight: 200 !important;
+}
+.fw-100 {
+  font-weight: 100 !important;
+}
+/* Declare all color Variable */
+:root {
+  --green-color: #27d062;
+  --blue-color: #3884fc;
+  --shadow-color: #0000002e;
+  --dark-color: #000;
+  --theme-color: #fd4b48;
+  --red-color: #ff6600;
+  --white-color: #fff;
+  --grey-color: #86898f;
+  --grey1-color: #808080;
+  --grey2-color: #5c5c5c;
+  --itemStatusGreen-color: #18a679;
+  --moccasin-color: #ffe4bb;
+  --promoBlue-color: #282c3f;
+  --promoTitleBlue-color: #4e5265;
+  --redText-color: #fd4b48;
+  --lightRed-color: #fd4b48;
+  --redOutline-color: #dc0c10;
+  --darkRed-color: #e2171a;
+  --transRed-color: #fef3f2;
+  --light-green: #89d2a8;
+  --errorSuccess-color: #fde7e6;
+  --information-color: #fff2d5;
+  --informationText-color: #282c3f;
+  --notch-color: #282c3f;
+  --darkGreen-color: #006400;
+  --link-color: #1d6be1;
+  --city-color: #86898f;
+}
+/* Text color */
+.redtext {
+  color: var(--red-color);
+}
+
+.darkColor {
+  color: var(--dark-color);
+}
+
+.greenText {
+  color: var(--green-color);
+}
+
+.blueText {
+  color: var(--blue-color) !important;
+}
+
+.whiteText {
+  color: var(--white-color);
+}
+
+/* Opacity Class */
+.op-0 {
+  opacity: 0 !important;
+}
+.op-30 {
+  opacity: 0.3 !important;
+}
+.op-50 {
+  opacity: 0.5 !important;
+}
+.op-70 {
+  opacity: 0.7 !important;
+}
+.op-80 {
+  opacity: 0.8 !important;
+}
+.op-100 {
+  opacity: 1 !important;
+}
+.vl {
+  border-left: 2px solid #707070;
+  height: 100px;
+}
