@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+video::-webkit-media-controls {
+  /* visibility: hidden; */
+  cursor: pointer;
+}
+
 body {
   overflow: auto;
   font-family: "Proxima Nova", "Inter";
@@ -16,7 +21,6 @@ body {
 .bg {
   width: 100%;
   height: 90vh;
-  /* border-radius: 0 0 100% 100%; */
   background-color: #e13331;
 
   border-radius: 50% / 100%;
@@ -24,12 +28,15 @@ body {
   border-top-right-radius: 0;
 }
 .sub-container {
-  width: 90%;
-  margin: auto;
-  padding-top: 40px;
+  padding: 40px 0;
+  padding-bottom: 0;
 
   flex-direction: column;
   row-gap: 20px;
+}
+.sub-container-div {
+  width: 90%;
+  margin: auto;
 }
 
 .logo > img {
@@ -178,6 +185,10 @@ body {
   width: 400px;
   line-height: 1.4;
 }
+.reviews-images {
+  height: 250px;
+  width: 250px;
+}
 .space {
   margin-top: 50px;
 }
@@ -186,13 +197,16 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  padding-top: 1.5rem;
 }
 .partners-logo {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
   margin-bottom: 5rem;
+}
+.partners-logo > img {
+  height: 190px;
+  width: 190px;
 }
 
 .footer {
@@ -203,7 +217,20 @@ body {
   display: grid;
   place-items: center;
 }
-
+.section4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  row-gap: 40px;
+}
+.salad-img {
+  width: 400px;
+  height: 200px;
+}
+.teppan-img {
+  width: 400px;
+  height: 200px;
+}
 /* media queries */
 
 /* Large desktop */
@@ -222,21 +249,26 @@ body {
 @media (max-width: 480px) {
   .bg {
     width: 100%;
-    height: 100vh;
-    border-radius: 0;
+    height: 25vh;
+
     background-color: #e13331;
   }
   .logo {
     display: grid;
     place-items: center;
   }
+  .logo > img {
+    width: 55px;
+    height: 48px;
+  }
   .heading-container {
     bottom: 0;
-    width: 100%;
+    width: 206px;
+    margin: auto;
     margin-top: 12px;
   }
   .heading-container > h1 {
-    font-size: 1.3rem;
+    font-size: 14px;
     text-align: center;
   }
 
@@ -247,7 +279,7 @@ body {
     width: 100%;
   }
   .section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top: 4vh;
   }
   .form,
@@ -270,5 +302,26 @@ body {
   }
   .section2-card > img {
     height: 161px;
+  }
+  .partners-logo > img {
+    height: 52px;
+    width: 52px;
+  }
+  .review1,
+  .review2,
+  .review3 {
+    width: 200px;
+  }
+  .review-desc {
+    width: 100%;
+    line-height: 1.4;
+    font-size: 8px;
+  }
+  .reviews-images {
+    width: 83px;
+    height: 98px;
+  }
+  .owner-info {
+    font-size: 8px;
   }
 }
