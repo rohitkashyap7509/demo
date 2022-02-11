@@ -59,7 +59,7 @@ body {
   bottom: 15vh;
 }
 .heading-container > h1 {
-  width: 500px;
+  width: 514px;
   font-size: 2.2rem;
   line-height: 1.4;
   color: #ffffff;
@@ -72,7 +72,7 @@ body {
   /* margin-top: 1vh; */
 }
 .tablet {
-  width: 80vh;
+  width: 85vh;
   height: 50vh;
 }
 
@@ -84,6 +84,7 @@ body {
 
   box-shadow: inset 0px 3px 6px #00000029, 10px 10px 10px #00000029;
   opacity: 0.84;
+  margin-right: 2rem;
   /* padding: 20px; */
 }
 .form {
@@ -126,12 +127,13 @@ body {
 }
 .section2-title {
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   width: 700px;
 }
 .section2-title-black {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   display: inline;
+  color: #000000;
 }
 .section2-parent {
   overflow: hidden;
@@ -151,8 +153,8 @@ body {
   margin-right: 50px;
 }
 .section2-card > img {
-  width: 250px;
-  height: 200px;
+  width: 357px;
+  height: 220px;
 }
 .section2-card > h4 {
   color: #e13431;
@@ -224,8 +226,9 @@ body {
   background-color: red;
 }
 .statics-desc {
-  width: 267px;
+  width: 300px;
   line-height: 1.4rem;
+  font-weight: 400;
 }
 
 .footer {
