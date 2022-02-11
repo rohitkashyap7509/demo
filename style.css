@@ -262,6 +262,10 @@ body {
 .salad-text {
   font-size: 2rem;
 }
+.cust-exp > img {
+  height: 300px !important;
+  width: 200px !important;
+}
 /* media queries */
 
 /* Large desktop */
