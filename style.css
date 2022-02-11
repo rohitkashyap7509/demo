@@ -7,7 +7,9 @@ video::-webkit-media-controls {
   /* visibility: hidden; */
   cursor: pointer;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   overflow: auto;
   font-family: "Proxima Nova", "Inter";
@@ -131,6 +133,9 @@ body {
   font-size: 3.2rem;
   display: inline;
 }
+.section2-parent {
+  overflow: hidden;
+}
 .section2-cards {
   overflow-x: scroll;
   margin-top: 3rem;
@@ -208,6 +213,20 @@ body {
   height: 190px;
   width: 190px;
 }
+.carousel-dot {
+  height: 20px;
+  width: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.carousel-dot:hover {
+  background-color: red;
+}
+.statics-desc {
+  width: 267px;
+  line-height: 1.4rem;
+}
 
 .footer {
   background-color: #e13431;
@@ -222,6 +241,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
   row-gap: 40px;
+  margin-top: 2.5rem;
 }
 .salad-img {
   width: 400px;
