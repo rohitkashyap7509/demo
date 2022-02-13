@@ -36,18 +36,38 @@
               <form
                 class="form"
                 name="myform"
-                action="/index.html"
-                onsubmit="return validate()"
-                method="post"
+                 id="form"
+                  action="/"
               >
-                <input type="text" name="name" placeholder="First Name" />
-                <input type="email" name="email" placeholder="Email" />
-                <input type="tel" name="mobile" placeholder="Phone Number" />
+              <div class="input-control">
+                <input type="text" name="name" id="name" placeholder="First Name" />
+                <div class="error"></div>
+
+                </div>
+                <div class="input-control">
+
+                <input type="text" name="email" id="email" placeholder="Email" />
+                <div class="error"></div>
+
+                </div>
+                <div class="input-control">
+
+                <input type="tel" name="mobile" id="mobile" placeholder="Phone Number" />
+                <div class="error"></div>
+
+                </div>
+                <div class="input-control">
+
                 <input
                   type="text"
                   name="restaurant name"
+                  id="resturantName" 
                   placeholder="Restaurant Name"
                 />
+                <div class="error"></div>
+
+                </div>
+
                 <div class="submit-btn-container">
                   <button type="submit" class="primary-btn">SIGN UP</button>
                 </div>
@@ -249,5 +269,39 @@
         </div>
       </div>
     </div>
+    <script>
+    function validate() {
+      console.log("hii");
+      var fname = document.reg_form.fname;
+      var resName = document.reg_form.lname;
+    
+      var email = document.reg_form.email;
+      var mobile = document.reg_form.mobile;
+    
+      if (fname.value.length <= 0) {
+        alert("Name is required");
+        fname.focus();
+        return false;
+      }
+      if (email.value.length <= 0) {
+        alert("Email Id is required");
+        email.focus();
+        return false;
+      }
+      if (mobile.value.length <= 0) {
+        alert("Mobile number is required");
+        mobile.focus();
+        return false;
+      }
+      if (resName.value.length <= 0) {
+        alert("Last Name is required");
+        resName.focus();
+        return false;
+      }
+    
+      return false;
+    }
+  </script>
+    <script src='./script.js'></script>
   </body>
 </html>

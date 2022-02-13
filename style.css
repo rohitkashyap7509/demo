@@ -95,7 +95,7 @@ body {
   padding: 20px;
   padding-bottom: 10px;
 }
-.form > input {
+/* .form > input {
   width: 90%;
   height: 50px;
   text-align: center;
@@ -103,7 +103,7 @@ body {
   color: #888282;
   font-weight: 400;
   font-size: 16px;
-}
+} */
 .submit-btn-container {
   display: flex;
   justify-content: flex-end;
@@ -115,6 +115,45 @@ body {
   padding: 10px 20px;
   color: #ffffff;
   opacity: 1;
+}
+/* form */
+.input-control {
+  width: 100%;
+  background-color: #ffffff;
+}
+.input-control > input {
+  /* border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%; */
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #707070;
+  color: #888282;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 13px;
+  height: 13px;
 }
 
 /* section 3 */
@@ -137,6 +176,8 @@ body {
 }
 .section2-parent {
   overflow: hidden;
+  width: 81%;
+  margin: auto;
 }
 .section2-cards {
   overflow-x: scroll;
