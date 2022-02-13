@@ -367,7 +367,6 @@ body {
     width: 100%;
     font-size: 1.3rem;
     text-align: center;
-    color: #ffffff !important;
   }
   .section2-title-black {
     font-size: 1.3rem;
@@ -395,5 +394,26 @@ body {
   }
   .owner-info {
     font-size: 8px;
+  }
+  .section4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .video-container {
+    width: 95%;
+    margin: auto;
+  }
+  .salad-img {
+    width: 90%;
+    margin: auto;
+  }
+  .teppan-img {
+    width: 90%;
+    margin: auto;
+  }
+  .statistics-container {
+    flex-direction: column;
+  }
+  .section2-parent {
+    width: 100%;
   }
 }
