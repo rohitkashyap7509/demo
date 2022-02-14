@@ -122,12 +122,6 @@ body {
   background-color: #ffffff;
 }
 .input-control > input {
-  /* border: 2px solid #f0f0f0;
-  border-radius: 4px;
-  display: block;
-  font-size: 12px;
-  padding: 10px;
-  width: 100%; */
   width: 100%;
   height: 50px;
   text-align: center;
@@ -157,6 +151,8 @@ body {
 }
 
 /* section 3 */
+.statistics-text {
+}
 .section2 {
   margin-top: 60px;
 }
@@ -319,6 +315,9 @@ body {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .container {
+    overflow-x: hidden;
+  }
   .bg {
     width: 100%;
     height: 25vh;
@@ -345,23 +344,52 @@ body {
   }
 
   .tablet-container {
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
   }
   .tablet {
-    width: 100%;
+    width: 286px;
+    height: 182px;
   }
   .section {
     flex-direction: column-reverse;
     margin-top: 4vh;
+    row-gap: 10px;
   }
+
   .form,
   .form-container {
-    width: 100%;
-    height: 100%;
+    width: 266px;
+    height: 237px;
+    margin: auto;
   }
-  .submit-btn-container {
-    display: flex;
-    justify-content: center;
+  .input-control > input {
+    width: 100%;
+    height: 33px;
+    text-align: center;
+    border: 1px solid #707070;
+    color: #888282;
+    font-weight: 400;
+    font-size: 10px;
+    background-color: #ffffff;
+  }
+  .primary-btn {
+    padding: 5px 10px !important;
+    font-size: 9px;
+  }
+
+  .statistics-text > h1 {
+    font-size: 20px !important;
+  }
+  .statistics-text > h6 {
+    font-size: 7px !important;
+    width: 100px;
+  }
+
+  .section2 {
+    margin-top: 20px;
+  }
+  .section2-cards {
+    margin-top: 1.2rem;
   }
   .section2-title {
     width: 100%;
@@ -373,6 +401,7 @@ body {
   }
   .section2-card > img {
     height: 161px;
+    width: 280px;
   }
   .partners-logo > img {
     height: 52px;
@@ -396,10 +425,10 @@ body {
     font-size: 8px;
   }
   .section4 {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 100%);
   }
   .video-container {
-    width: 95%;
+    width: 100%;
     margin: auto;
   }
   .salad-img {
@@ -411,9 +440,14 @@ body {
     margin: auto;
   }
   .statistics-container {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .section2-parent {
     width: 100%;
+  }
+  .section5,
+  .footer {
+    width: 90%;
+    margin: auto;
   }
 }
