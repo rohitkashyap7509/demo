@@ -3,6 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+video::-webkit-media-controls {
+  /* visibility: hidden; */
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   overflow: auto;
   font-family: "Proxima Nova", "Inter";
@@ -16,7 +23,6 @@ body {
 .bg {
   width: 100%;
   height: 90vh;
-  /* border-radius: 0 0 100% 100%; */
   background-color: #e13331;
 
   border-radius: 50% / 100%;
@@ -24,12 +30,15 @@ body {
   border-top-right-radius: 0;
 }
 .sub-container {
-  width: 90%;
-  margin: auto;
-  padding: 40px 0px;
+  padding: 40px 0;
+  padding-bottom: 0;
 
   flex-direction: column;
   row-gap: 20px;
+}
+.sub-container-div {
+  width: 90%;
+  margin: auto;
 }
 
 .logo > img {
@@ -50,7 +59,7 @@ body {
   bottom: 15vh;
 }
 .heading-container > h1 {
-  width: 500px;
+  width: 514px;
   font-size: 2.2rem;
   line-height: 1.4;
   color: #ffffff;
@@ -63,7 +72,7 @@ body {
   /* margin-top: 1vh; */
 }
 .tablet {
-  width: 80vh;
+  width: 85vh;
   height: 50vh;
 }
 
@@ -75,6 +84,7 @@ body {
 
   box-shadow: inset 0px 3px 6px #00000029, 10px 10px 10px #00000029;
   opacity: 0.84;
+  margin-right: 2rem;
   /* padding: 20px; */
 }
 .form {
@@ -85,7 +95,7 @@ body {
   padding: 20px;
   padding-bottom: 10px;
 }
-.form > input {
+/* .form > input {
   width: 90%;
   height: 50px;
   text-align: center;
@@ -93,7 +103,7 @@ body {
   color: #888282;
   font-weight: 400;
   font-size: 16px;
-}
+} */
 .submit-btn-container {
   display: flex;
   justify-content: flex-end;
@@ -106,8 +116,43 @@ body {
   color: #ffffff;
   opacity: 1;
 }
+/* form */
+.input-control {
+  width: 100%;
+  background-color: #ffffff;
+}
+.input-control > input {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #707070;
+  color: #888282;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 13px;
+  height: 13px;
+}
 
 /* section 3 */
+.statistics-text {
+}
 .section2 {
   margin-top: 60px;
 }
@@ -117,12 +162,18 @@ body {
 }
 .section2-title {
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   width: 700px;
 }
 .section2-title-black {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   display: inline;
+  color: #000000;
+}
+.section2-parent {
+  overflow: hidden;
+  width: 81%;
+  margin: auto;
 }
 .section2-cards {
   overflow-x: scroll;
@@ -139,8 +190,8 @@ body {
   margin-right: 50px;
 }
 .section2-card > img {
-  width: 250px;
-  height: 200px;
+  width: 357px;
+  height: 220px;
 }
 .section2-card > h4 {
   color: #e13431;
@@ -167,12 +218,54 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  margin-bottom: 6rem;
 }
-.review1 {
-  border: 2px solid black;
+.review1,
+.review2,
+.review3 {
+  width: 400px;
+}
+.review-desc {
+  width: 400px;
+  line-height: 1.4;
+}
+.reviews-images {
+  height: 250px;
+  width: 250px;
 }
 .space {
   margin-top: 50px;
+}
+.owner-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.partners-logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+.partners-logo > img {
+  height: 190px;
+  width: 190px;
+}
+.carousel-dot {
+  height: 20px;
+  width: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.carousel-dot:hover {
+  background-color: red;
+}
+.statics-desc {
+  width: 300px;
+  line-height: 1.4rem;
+  font-weight: 400;
 }
 
 .footer {
@@ -182,6 +275,29 @@ body {
   font-size: 35px;
   display: grid;
   place-items: center;
+}
+.section4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  row-gap: 40px;
+  margin-top: 2.5rem;
+}
+.salad-img {
+  width: 400px;
+  height: 170px;
+}
+.teppan-img {
+  width: 450px;
+  height: 250px;
+}
+.teppan-text {
+  font-size: 2rem;
+  width: 400px;
+  text-align: center;
+}
+.salad-text {
+  font-size: 2rem;
 }
 /* media queries */
 
@@ -199,55 +315,139 @@ body {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .container {
+    overflow-x: hidden;
+  }
   .bg {
     width: 100%;
-    height: 100vh;
-    border-radius: 0;
+    height: 25vh;
+
     background-color: #e13331;
   }
   .logo {
     display: grid;
     place-items: center;
   }
+  .logo > img {
+    width: 55px;
+    height: 48px;
+  }
   .heading-container {
     bottom: 0;
-    width: 100%;
+    width: 206px;
+    margin: auto;
     margin-top: 12px;
   }
   .heading-container > h1 {
-    font-size: 1.3rem;
+    font-size: 14px;
     text-align: center;
   }
 
   .tablet-container {
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
   }
   .tablet {
-    width: 100%;
+    width: 286px;
+    height: 182px;
   }
   .section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top: 4vh;
+    row-gap: 10px;
   }
+
   .form,
   .form-container {
-    width: 100%;
-    height: 100%;
+    width: 266px;
+    height: 237px;
+    margin: auto;
   }
-  .submit-btn-container {
-    display: flex;
-    justify-content: center;
+  .input-control > input {
+    width: 100%;
+    height: 33px;
+    text-align: center;
+    border: 1px solid #707070;
+    color: #888282;
+    font-weight: 400;
+    font-size: 10px;
+    background-color: #ffffff;
+  }
+  .primary-btn {
+    padding: 5px 10px !important;
+    font-size: 9px;
+  }
+
+  .statistics-text > h1 {
+    font-size: 20px !important;
+  }
+  .statistics-text > h6 {
+    font-size: 7px !important;
+    width: 100px;
+  }
+
+  .section2 {
+    margin-top: 20px;
+  }
+  .section2-cards {
+    margin-top: 1.2rem;
   }
   .section2-title {
     width: 100%;
     font-size: 1.3rem;
     text-align: center;
-    color: #ffffff !important;
   }
   .section2-title-black {
     font-size: 1.3rem;
   }
   .section2-card > img {
     height: 161px;
+    width: 280px;
+  }
+  .partners-logo > img {
+    height: 52px;
+    width: 52px;
+  }
+  .review1,
+  .review2,
+  .review3 {
+    width: 200px;
+  }
+  .review-desc {
+    width: 100%;
+    line-height: 1.4;
+    font-size: 8px;
+  }
+  .reviews-images {
+    width: 83px;
+    height: 98px;
+  }
+  .owner-info {
+    font-size: 8px;
+  }
+  .section4 {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .video-container {
+    width: 100%;
+    margin: auto;
+  }
+  .salad-img {
+    width: 90%;
+    margin: auto;
+  }
+  .teppan-img {
+    width: 90%;
+    margin: auto;
+  }
+  .statistics-container {
+    /* flex-direction: column; */
+  }
+  .section2-parent {
+    width: 100%;
+  }
+  .section5,
+  .footer {
+    width: 90%;
+    margin: auto;
   }
 }

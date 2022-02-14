@@ -12,6 +12,7 @@
     <div class="container">
       <div class="bg">
         <div class="sub-container">
+          <div class="sub-container-div">
           <div class="logo">
             <img
               src="./assets/easyeatLogo.png"
@@ -35,18 +36,38 @@
               <form
                 class="form"
                 name="myform"
-                action="/index.html"
-                onsubmit="return validate()"
-                method="post"
+                 id="form"
+                  action="/"
               >
-                <input type="text" name="name" placeholder="First Name" />
-                <input type="email" name="email" placeholder="Email" />
-                <input type="tel" name="mobile" placeholder="Phone Number" />
+              <div class="input-control">
+                <input type="text" name="name" id="name" placeholder="First Name" />
+                <div class="error"></div>
+
+                </div>
+                <div class="input-control">
+
+                <input type="text" name="email" id="email" placeholder="Email" />
+                <div class="error"></div>
+
+                </div>
+                <div class="input-control">
+
+                <input type="tel" name="mobile" id="mobile" placeholder="Phone Number" />
+                <div class="error"></div>
+
+                </div>
+                <div class="input-control">
+
                 <input
                   type="text"
                   name="restaurant name"
+                  id="resturantName" 
                   placeholder="Restaurant Name"
                 />
+                <div class="error"></div>
+
+                </div>
+
                 <div class="submit-btn-container">
                   <button type="submit" class="primary-btn">SIGN UP</button>
                 </div>
@@ -57,18 +78,27 @@
             <div class="section2-title-container">
               <h1 class="section2-title red-text">
                 Reasons to digitize
-                <h1 class="section2-title-black">your restaurant</h1>
+                <span class="section2-title-black">your restaurant</span>
               </h1>
             </div>
+            <div class="section2-parent">
             <div
               class="section2-cards d-flex align-items-center justify-content-between"
             >
               <div class="section2-card c-flex align-items-center">
                 <img src="./assets/cost.png" alt="" />
-                <h4>Reduced Labour Costs</h4>
+                <h4>Cost Effective</h4>
                 <p>
-                  Automation frees up reliance and dependency on staff with QR
-                  Ordering and Digital Menus
+                  By going digital, you can save tremendous costs spending on printing.
+                  Also you can easily update your menu for free!
+                </p>
+              </div>
+              <div class="section2-card c-flex align-items-center">
+                <img src="./assets/cost.png" alt="" />
+                <h4>Improved Customer Experience</h4>
+                <p>
+                 Customers are always looking for quick and easy solutions.
+                 Let them order and pay from their tables!
                 </p>
               </div>
               <div class="section2-card c-flex align-items-center">
@@ -81,37 +111,34 @@
               </div>
               <div class="section2-card c-flex align-items-center">
                 <img src="./assets/cost.png" alt="" />
-                <h4>Reduced Labour Costs</h4>
+                <h4>Digital Menus Get More Orders</h4>
                 <p>
-                  Automation frees up reliance and dependency on staff with QR
-                  Ordering and Digital Menus
+                  After analyzing 100,000 orders, 
+                  we found that people spend 30% more
+                   when they order digitally
                 </p>
               </div>
               <div class="section2-card c-flex align-items-center">
                 <img src="./assets/cost.png" alt="" />
-                <h4>Reduced Labour Costs</h4>
+                <h4>Real-time Data</h4>
                 <p>
-                  Automation frees up reliance and dependency on staff with QR
-                  Ordering and Digital Menus
-                </p>
-              </div>
-              <div class="section2-card c-flex align-items-center">
-                <img src="./assets/cost.png" alt="" />
-                <h4>Reduced Labour Costs</h4>
-                <p>
-                  Automation frees up reliance and dependency on staff with QR
-                  Ordering and Digital Menus
+                  Track your bestsellers, 
+                  forecast future demand and manage inventory level with 
+                  real-time data of your business.
                 </p>
               </div>
             </div>
-
-            <div class="center">o o</div>
+          </div>
+            <div class="d-flex align-items-center justify-content-center mb-1">
+            <span class="carousel-dot mr-1"></span>
+            <span class="carousel-dot"></span>
+          </div>
             <div class="center">
               <button class="primary-btn">LEARN MORE</button>
             </div>
           </div>
           <!--section 3  -->
-          <div class="section3 c-flex row-gap-20 ">
+          <div class="section3 c-flex row-gap-20 mb-4">
             <hr class="new1" />
             <div class="section2-title-container">
               <h1 class="section2-title-black">
@@ -120,55 +147,161 @@
               </h1>
             
             </div>
-            <div class='d-flex align-items-center justify-content-around'>
-              <div>
-              <h1>75%</h1>
-              <h6>Restaurants get ROI of more than 5x</h6>
+            <div class='d-flex align-items-center justify-content-around pt-2 statistics-container'>
+              <div class='text-center statistics-text'>
+              <h1 class="red-text fs-60 fw-1000 mb-2">75%</h1>
+              <h6 class="fs-20 statics-desc">Restaurants get ROI of more than 5x</h6>
               </div>
               <div class="vl"></div>
 
-              <div>
-                <h1>75%</h1>
-                <h6>Restaurants get ROI of more than 5x</h6>
+              <div class='text-center statistics-text'>
+                <h1  class="red-text fs-60 fw-1000 mb-2">23%</h1>
+                <h6 class="fs-20 statics-desc">Increase in repeat customers</h6>
                 </div>
                 <div class="vl"></div>
 
-                <div>
-                  <h1>75%</h1>
-                  <h6>Restaurants get ROI of more than 5x</h6>
+                <div class='text-center statistics-text'>
+                  <h1  class="red-text fs-60 fw-1000 mb-2">26%</h1>
+                  <h6 class="fs-20 statics-desc">Savings in delivery commission</h6>
                   </div>
             </div>
           </div>
+                    <hr class="new1">
+
+          <div class="section4 mb-5">
+
+          <div>
+         
+          <video class="video-container" width="500px" height="500px" 
+          controls="controls"> 
+            
+          <source src="./assets/v1.mp4" 
+              type="video/mp4"> 
+      </video> 
+          </div>
+
+            <div class="center row-gap-30">
+              <img class='salad-img' src='./assets/salad.png' alt=''/>
+              <h4 class="d-flex align-items-center justify-content-center salad-text lh-3">
+                Mr Dylan</h4>
+            </div>
+
+            <div  class="center">
+              <img class='teppan-img' src='./assets/teppan.png' alt=''/>
+              <h4 class="d-flex align-items-center justify-content-center lh-3 teppan-text">
+                Ms liew & Mr Choong, Teppanyaki</h4>
+            </div>
+  
+              <div>
+                <video class="video-container"  width="500px" height="500px" 
+                controls="controls"> 
+                  
+                <source src="./assets/teppanyaki.mp4" 
+                    type="video/mp4"> 
+            </video>
+                
+              </div>
+
+          </div>
+          </div>
+
 
           <!-- section -->
           <div class="section5">
             <div class="reviews">
-              <div class="review1">
-              <img src="/assets/person1.png" alt="Fish Head Noodle" width="250px" height="250px">
-              <br>I generated an additional RM 12,000 per outlet</br> per month using EasyEat AI. Even during</br> MCO in 2021, I'm operating my business </br>at 70% of pre-MCO level,</br>all thanks to Easy Eat AI!</p>
+              <div class="review1 center row-gap-20">
+              <img src="/assets/person1.png" alt="Fish Head Noodle" class='reviews-images'>
+              <p class="text-center fw-400 review-desc">I generated an additional RM 12,000 per outlet
+              per month using EasyEat AI. Even during
+              MCO in 2021, I'm operating my business 
+              at 70% of pre-MCO level,all thanks to Easy Eat AI!
+             </p>
+             <div class="owner-info ">
+               <h4 class="text-center ">Ms. Law Yen Lee,<br> Mr Fish FishHead Noodle</h4>
+             </div>
             </div>
-            <div class="review2">
-              <img src="/assets/person2.png" alt="caravan Cafe" width="250px" height="250px">
-              <p>This is it </p>
+            <div class="review2 center row-gap-20">
+              <img src="/assets/person2.png" alt="caravan Cafe" class='reviews-images'>
+              <p class="text-center fw-400 review-desc">Using East Eat AI has made my life stress free.</br> 
+                I don't sit at my restaurant 24/7 now.</br>
+                Easy Eat AI's QR technology has helped increase </br> 
+                our weekly repeat visitors to 45% and </br>
+                reduce my staff cost by 40%!
+              </p>
+              <div class="owner-info">
+                <h4 class="text-center ">Mohamad Amin,<br> The Caravan Cafe</h4>
+              </div>
             </div>
-            <div class="review3">
-              <img src="/assets/person3.png" alt="WTF Group" width="250px" height="250px">
-              <p>This is it </p>
+            <div class="review3 center row-gap-20">
+              <img src="/assets/person3.png" alt="WTF Group" class='reviews-images'>
+              <p class="text-center fw-400 review-desc">We used to have 3 different systems </br>
+                 at 3 outlets and using Easy Eat AI </br>
+                 has helped us managed all our reporting,</br>
+                 finances and analytics on a single dashboard. 
+                </p>
+                <div class="owner-info">
+                  <h4 class="text-center ">Ms. Priti Gathani,<br>WTF Restaurants Group</h4>
+                </div>
             </div>
             <!-- <h1>hello</h1> -->
+          </div>
+          <div class="partners-logo">
+            <img src ="/assets/barbeque-logo.png " alt="bbq-logo"  >
+            <img src ="/assets/mrfish-logo.png " alt="mr-fish-logo" >
+            <img src ="/assets/roticanai-logo.png" alt="roticanai-logo" >
+            <img src ="/assets/papadom-logo.png " alt="papadom-logo" >
+            <img src ="/assets/thaiboy-logo.png " alt="thaiboy-logo" >
+            <img src ="/assets/crg-logo.png " alt="crg-logo" >
+          </div>
+          <div class="center pb-2">
+            <button class="primary-btn">BOOK YOUR FREE DEMO!</button>
           </div>
           </div>
 
           
           <!-- footer -->
           <!-- <hr class="new1"> -->
-          <!-- <div class="footer">
+          <div class="footer">
             <div class="align-items-center">
-            <h4>©️ 2022, Easy Eat AI Sdn Bhd. All rights reserved.</h4>
+            <h4 class="fs-20 fw-400">©️ 2022, Easy Eat AI Sdn Bhd. All rights reserved.</h4>
           </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
+    <script>
+    function validate() {
+      console.log("hii");
+      var fname = document.reg_form.fname;
+      var resName = document.reg_form.lname;
+    
+      var email = document.reg_form.email;
+      var mobile = document.reg_form.mobile;
+    
+      if (fname.value.length <= 0) {
+        alert("Name is required");
+        fname.focus();
+        return false;
+      }
+      if (email.value.length <= 0) {
+        alert("Email Id is required");
+        email.focus();
+        return false;
+      }
+      if (mobile.value.length <= 0) {
+        alert("Mobile number is required");
+        mobile.focus();
+        return false;
+      }
+      if (resName.value.length <= 0) {
+        alert("Last Name is required");
+        resName.focus();
+        return false;
+      }
+    
+      return false;
+    }
+  </script>
+    <script src='./script.js'></script>
   </body>
 </html>
