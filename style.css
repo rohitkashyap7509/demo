@@ -348,6 +348,9 @@ body {
     font-size: 14px;
     text-align: center;
   }
+  .input-control .error {
+    font-size: 10px;
+  }
 
   .tablet-container {
     /* margin-bottom: 60px; */
