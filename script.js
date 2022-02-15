@@ -4,6 +4,10 @@ const email = document.getElementById("email");
 const phoneNumber = document.getElementById("mobile");
 const resturantName = document.getElementById("resturantName");
 
+// carousel move
+const buttonRight = document.getElementById("slideRight");
+const buttonLeft = document.getElementById("slideLeft");
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -67,4 +71,11 @@ const validateInputs = () => {
   } else {
     setSuccess(resturantName);
   }
+};
+
+buttonRight.onclick = function () {
+  document.getElementById('section-scroll').scrollLeft += 20;
+};
+buttonLeft.onclick = function () {
+  document.getElementById('section-scroll').scrollLeft -= 20;
 };
